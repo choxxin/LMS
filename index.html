@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serian_project</title>
+    <link
+      rel="shortcut icon"
+      href="https://pbs.twimg.com/profile_images/1499265096006000640/ZhEnSTch_400x400.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main div ,whole page -->
+    <nav class="navbar">
+      <ul>
+          <li><a id="home" href="index.html">&#x2302 HOME</a> </li>
+          <li><a  href="Aboutus.html" >© ABOUT</a></li>
+          <li><a id="course" href="explorecourse.html">🗒 COURSES</a>
+            <!-- <ul>
+              <li><a href=#>Web developmet</a></li>
+              <li><a href=#> data developmet</a></li>
+              <li><a href=#> machine developmet</a></li>
+            </ul> -->
+           </li>
+            <li><a href="explorecourse.html">ϟ EXPLORE</a></li>
+            <div class="search">
+              <li><a href="nightmode.html">🌛</a></li>
+              <a href="jayantlogin.html"><button id="signup" type="button" >SignIN</button></a>
+              <a href="jayantsignup.html"><button id="signin" type="button" >SignUp</button></a>
+              <input type="text" name="search" id="search" placeholder="search this website" >
+               
+            </div>
+
+      </ul>
+    </nav>
+    <div id="main">
+      <div id="page1">
+        <!-- letter div taking 100%width  -->
+        <h1   >Get skilled</h1>
+        <h1>Get job faster</h1>
+        <div id="video container">
+          <!-- muted hatao lagao to vd play hot hai -->
+          <!-- you can change muted control like att -->
+          <video autoplay loop muted width="95%" src="vstock1.mp4"></video>
+        </div>
+      </div>
+      <div id="page2">
+        <div class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="2"
+            height="80%"
+            width="100%"
+            src="https://images.pexels.com/photos/4144224/pexels-photo-4144224.jpeg?auto=compress&cs=tinysrgb&w=600"
+          />
+          <h2>Top mentor's from worldwide</h2>
+        </div>
+        <div class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="2"
+            width="100%"
+            height="80%"
+            src="https://images.pexels.com/photos/4145347/pexels-photo-4145347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          />
+          <h2>Interactive user interface</h2>
+        </div>
+        <div class="elem">
+          <img
+            data-scroll
+            data-scroll-speed="2"
+            width="100%"
+            height="80%"
+            src="https://images.pexels.com/photos/4145196/pexels-photo-4145196.jpeg?auto=compress&cs=tinysrgb&w=600"
+          />
+          <h2>Focuses on practical skills</h2>
+        </div>
+      </div>
+      <div id="hide"><h1 id="p2p3">OUR TOP SELLING COURSE</h1></div>
+
+       
+
+      <div id="page3">
+        <!-- .child#child$*4 -->
+        <div class="child" id="child1">
+          <img
+            height="100%"
+            width="100%"
+            src="https://i0.wp.com/basescripts.com/wp-content/uploads/2022/01/htmlcssj1s1.png?fit=2348%2C1452&ssl=1"
+          />
+        </div>
+        <div class="child" id="child2">
+          <img
+            height="100%"
+            width="100%"
+            src="https://i.ytimg.com/vi/Vi9bxu-M-ag/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCaac3rI2u0HnJS4UGH6A0FG1x5YA"
+          />
+        </div>
+        <div class="child" id="child3">
+          <img
+            height="100%"
+            width="100%"
+            src="https://i.ytimg.com/vi/rZ41y93P2Qo/sddefault.jpg"
+          />
+        </div>
+        <div class="child" id="child4">
+          <img
+            height="100%"
+            width="100%"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20230314113535/OOPs-Interview-Questions-and-Answers.png"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- This is the js animation library ,just need to paste above script tag -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

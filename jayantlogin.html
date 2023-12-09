@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css.css">
+  <link
+  rel="shortcut icon"
+  href="https://pbs.twimg.com/profile_images/1499265096006000640/ZhEnSTch_400x400.jpg"
+  type="image/x-icon"
+/>
+  <title>Login Page</title>
+  <script>
+    function submitForm() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var errorMessage = document.getElementById("error-message");
+  if (username === "" || password === "") {
+    errorMessage.textContent = "Username and password are required.";
+  }else{
+    alert(username + ": You have successfully loged in😊")
+  }
+}
+  </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a id="home" href="index.html">&#x2302 HOME</a> </li>
+                <li><a  href="Aboutus.html" >© ABOUT</a></li>
+                <li><a id="course" href="explorecourse.html">🗒 COURSES</a>
+                 </li>
+                  <li><a href="explorecourse.html">ϟ EXPLORE</a></li>
+            </ul>
+          </nav>
+    </header>
+    <img id = "imag" src="side.jpg" alt="Login Image" width="50%" height="70%">
+    <div class="login-container">
+       
+        <h2><u>Login</u></h2>
+        <form id="loginForm">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="button" onclick="submitForm()"  id="button">Login</button>
+        </form>
+        <p>Don't have an account? <a href="jayantsignup.html"> Click here</a></p>
+        <p id="error-message" class="error-message"></p>
+    </div>
+</body>
+</html>
+</body>
+</html>

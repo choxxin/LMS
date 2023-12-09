@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("Background.jpg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 97.8vh;
+  margin-right: 250px;
+}
+.login-container {
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+label {
+  display: flex;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: 2;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 300px;
+}
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+.error-message {
+  color: red;
+  margin-top: 16px;
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+a:hover {
+  color: red;
+}
+p {
+  text-align: center;
+}
+.navbar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  margin-bottom: 650px;
+  padding-left: 100px;
+  width: 120%;
+}
+.navbar ul {
+  overflow: auto;
+}
+.navbar li {
+  float: left;
+  list-style: none;
+  margin: 18px 30px;
+}
+.navbar li a {
+  padding: 3px 3px;
+  text-decoration: none;
+  color: rgb(19, 19, 19);
+  font-weight: bold;
+}
+.navbar li a:hover {
+  color: rgb(70, 91, 98);
+  text-shadow: 40px;
+  font-size: large;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+.navbar li a:hover {
+  display: flex;
+  flex-direction: column;
+}
+#imag {
+  margin-right: 30vw;
+  margin-top: 5vh;
+  position: absolute;
+  border: 1px solid rgb(213, 213, 240);
+  border-radius: 100px;
+}

@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(payment.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #061c42;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(37, 29, 33);
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; 
+    background-image:url(payment.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.course {
+    flex: 0 1 calc(30% - 20px); 
+    width: 30%;
+    background-color: #0f0c0c;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+
+}
+.course:hover{
+    transform:scale(1.1);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: #616255;
+}
+
+a {
+    display: inline-block;
+    background-color: #85521d;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #0b00e0;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+}
+#course{
+    margin-left: 530px;
+}

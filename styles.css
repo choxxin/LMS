@@ -1,0 +1,70 @@
+form {
+  text-align: center;
+  margin-top: 150px;
+  margin-right: 90px;
+  line-height: 90px;
+  padding-left: 150px;
+  padding-right: 150px;
+  height: 450px;
+}
+input {
+  border: 2px solid black;
+  padding: 12px;
+  background-color: white;
+}
+select {
+  border: 1.8px solid black;
+  padding: 10px;
+  background-color: white;
+  width: 500px;
+}
+#h1 {
+  margin-left: 120px;
+  margin-right: 120px;
+  background-color: bisque;
+}
+body {
+  background-color: beige;
+}
+#submit {
+  width: 500px;
+  height: 50px;
+  font-style: italic;
+  text-decoration-line: underline;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: bolder;
+  background-color: skyblue;
+  font-size: 25px;
+}
+input:hover {
+  transform: scale(1.1);
+}
+select:hover {
+  transform: scale(1.1);
+}
+option:hover {
+  transform: scale(1.1);
+}
+.bg-image {
+  background-image: url("study.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 150px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6; /* Adjust the opacity to your liking */
+  z-index: -1;
+}
+.data {
+  width: 500px;
+}
+#data {
+  width: 530px;
+  padding: 13px;
+}
+.option {
+  background-color: aqua;
+}

@@ -1,0 +1,194 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#page1 {
+  min-height: 100vh;
+
+  position: relative;
+  width: 100%;
+  padding: 3vw;
+  padding-top: 15vh;
+  background-color: rgb(190, 236, 236);
+}
+
+#page1 h1 {
+  font-size: 10.4vw;
+  text-transform: uppercase;
+  font-family: fantasy;
+  line-height: 6vh;
+  letter-spacing: 10px;
+  word-spacing: 50px;
+}
+#video-container {
+  height: 100vh;
+  width: 100%;
+  background-color: grey;
+  margin-top: 1vw;
+  position: relative;
+}
+#video-container video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#page2 {
+  /* border: 2px solid green; */
+
+  height: 100vh;
+  width: 100%;
+  background-color: antiquewhite;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+  /* upar niche       left right */
+  padding: 3vw 1vw;
+}
+#page2 .elem {
+  height: 100%;
+  width: 30%;
+  /* background-color: red; */
+  overflow: hidden;
+}
+#page2 .elem img {
+  object-fit: cover;
+  scale: 1.1;
+}
+h2 {
+  text-align: center;
+  font-family: monospace;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+
+  letter-spacing: 5px;
+}
+/* seclection in web */
+::selection {
+  color: rgb(60, 0, 255);
+  background-color: white;
+}
+#page3 {
+  /* border: 4px solid green; */
+  margin-top: 0vh;
+  min-height: 120vh;
+  width: 100%;
+  position: relative;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex wrap wrap the childrens in its original size */
+  flex-wrap: wrap;
+}
+.child {
+  height: 54vh;
+  width: 30 vw;
+  background-color: blueviolet;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child img {
+  height: 100%;
+}
+
+#p2p3 {
+  text-align: center;
+  font-size: 3.5vw;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* NAV */
+.navbar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  border-style: hidden;
+}
+.navbar ul {
+  overflow: auto;
+}
+.navbar li {
+  float: left;
+  list-style: none;
+  margin: 13px 20px;
+}
+.navbar li a {
+  padding: 3px 3px;
+  text-decoration: none;
+  color: rgb(19, 19, 19);
+  font-weight: bold;
+}
+.navbar li a:hover {
+  color: rgb(10, 91, 118);
+  text-shadow: 40px;
+  font-size: large;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+.navbar li ul {
+  display: none;
+  flex-direction: column;
+}
+/* drop down */
+/* .navbar li a:hover .navbar li ul {
+  display: flex;
+  flex-direction: column;
+} */
+nav .search {
+  float: right;
+  color: yellow;
+  padding: 12px 10px;
+}
+.navbar input {
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+
+#signin {
+  font-size: 1.2vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  color: black;
+  border: solid 15px white;
+  border-radius: 30px;
+}
+#signin:hover {
+  background-color: rgb(47, 246, 179);
+  transition-property: all;
+  transition-duration: 0.5s;
+  color: aliceblue;
+  border: 1px solid black;
+}
+#signup {
+  font-size: 1.2vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  color: black;
+  border: solid 15px white;
+  border-radius: 30px;
+}
+#signup:hover {
+  background-color: rgb(47, 246, 179);
+  transition-property: all;
+  transition-duration: 0.5s;
+  color: aliceblue;
+  border: 1px solid black;
+}
+
+/* #home {
+  text-decoration: blue;
+} */
+#hide {
+  padding: 1vh;
+  background-color: rgb(255, 255, 255);
+  height: 20vh;
+}

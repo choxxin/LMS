@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css.css">
+    <link
+    rel="shortcut icon"
+    href="https://pbs.twimg.com/profile_images/1499265096006000640/ZhEnSTch_400x400.jpg"
+    type="image/x-icon"
+  />
+    <title>Learning Management System - Signup</title>
+    <script>
+     function validateForm() {
+    var username = document.getElementById('Username').value  ;
+    var Username=document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var mobile = document.getElementById('mobile').value;
+    var password = document.getElementById('password').value;
+    var checkbox = document.getElementById("checkbox");
+    if (!checkbox.checked) {
+      alert("Please agree to the terms and conditions.");
+      return;
+    } 
+    if (email === "") {
+    alert("Please fill in the email field");
+} else if (mobile === "") {
+    alert("Please fill in the mobile field");
+} else if (password === "") {
+    alert("Please fill in the password field");
+} else if (username === "" || Username === "") {
+    alert("Please fill in the username field");
+}
+    else{
+        alert("Login sucessfull")
+        alert('Username: ' + username + '\nEmail: ' + email + '\nMobile no. : ' + mobile + '\nPassword: ' + password);
+    }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a id="home" href="index.html">&#x2302 HOME</a> </li>
+                <li><a  href="Aboutus.html" >© ABOUT</a></li>
+                <li><a id="course" href="explorecourse.html">🗒 COURSES</a>
+                 </li>
+                  <li><a href="explorecourse.html">ϟ EXPLORE</a></li>
+            </ul>
+          </nav>
+    </header>  
+    <img id = "imag" src="side.jpg" alt="Login Image" width="36%" height="70%"> 
+    <div class="container">
+        <h1 id="heading"><u>Sign Up!</u></h1><br>
+        <form id="signupForm">
+            <label for="username" class="label">First name :-</label>
+            <input type="text" id="Username" name="firstname" required>
+            <label for="username" class="label">Last name :-</label>
+            <input type="text" id="username" name="lastname" required>
+            <label for="email" class="label">Email :-</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mobile" class="label">Mobile no. :-</label>
+            <input type="mobile" id="mobile" name="mobile" required>
+            <label for="password" class="label">Create Password :-</label>
+            <input type="password" id="password" name="password" required>
+            <input type="checkbox" name="checkbox" id="checkbox"> I agree to <a href="abc">terms & Conditions</a>
+            <button type="button" onclick="validateForm()">Submit</button><br><br>
+            <p>Already have an account? <a href="jayantlogin.html"> Click here</a></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="pay.css" />
+    <link
+      rel="shortcut icon"
+      href="https://pbs.twimg.com/profile_images/1499265096006000640/ZhEnSTch_400x400.jpg"
+      type="image/x-icon"
+    />
+    <script>
+      function proceed() {
+        alert("Payment Completed 🙂");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Payment Details</h1>
+    </header>
+    <main class="payment-container">
+      <section class="payment-method">
+        <h2>Select Payment Method</h2>
+        <img id="image" src="UPI.jpg" alt="UPI" />
+        <img id="img" src="net_banking.png" alt="Net Banking" />
+      </section>
+
+      <section class="coupon-section">
+        <h2>Apply Coupons</h2>
+        <input type="text" placeholder="Enter coupon code" />
+        <button type="button">Apply</button>
+      </section>
+
+      <section class="payment-details">
+        <h2>Pay Using Debit Card</h2>
+        <div id="visa-details" class="payment-details-tab">
+          <label for="card-number">Card Number</label>
+          <input
+            type="text"
+            id="card-number"
+            placeholder="Enter your card number"
+          />
+          <label for="expiry-date">Expiry Date</label>
+          <input type="text" id="expiry-date" placeholder="MM/YY" />
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" placeholder="CVV" />
+        </div>
+
+        <div
+          id="net-banking-details"
+          class="payment-details-tab"
+          style="display: none"
+        >
+          <label for="bank">Select Bank</label>
+          <select id="bank">
+            <option value="icici">ICICI Bank</option>
+            <option value="hdfc">HDFC Bank</option>
+          </select>
+        </div>
+      </section>
+
+      <button type="button" onclick="proceed()">Proceed to Payment</button>
+    </main>
+    <footer>
+      <p>&copy; 2023 Payment Gateway</p>
+    </footer>
+  </body>
+</html>
